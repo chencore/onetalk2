@@ -26,7 +26,7 @@ class IndexPage extends GetView<IndexController> {
         bottomNavigationBar: BottomNavigationBar(
           // 当前菜单下标
           currentIndex: 0,
-          // 点击事件,获取当前点击的标签下标
+          // 点击事件,获取当前点击的标签下标sww
           // onTap: (int index) {
           //   globalStateController.changeBottomBarIndex(index);
           // },
