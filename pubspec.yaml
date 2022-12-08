@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  eosdart: ^0.4.3
+  eosdart: ^0.4.8
   
   # ios 图标库
   cupertino_icons: ^1.0.2
