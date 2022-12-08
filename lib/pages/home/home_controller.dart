@@ -7,7 +7,6 @@ class HomeController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
   }
 
@@ -19,8 +18,8 @@ class HomeController extends GetxController {
 
   void increment() => count.value++;
 
-  // void changeUserName() {
-  //   userName = 'juefei';
-  //   update();
-  // }
+  void changeUserName() {
+    userName.value = 'juefei';
+    update();
+  }
 }
