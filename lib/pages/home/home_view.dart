@@ -16,9 +16,12 @@ class HomePage extends GetView<HomeController> {
             TextButton(
                 onPressed: () => controller.changeUserName(),
                 child: Text('changeName')),
-            TextButton(
+            Obx(() => TextButton(
                 onPressed: () => controller.invokeIndexMethod("aaaa"),
-                child: Text('invokeIndex'))
+                child: Text("${controller.btnTaskName.value}"))),
+            Obx(() => TextButton(
+                onPressed: () => controller.startTask(),
+                child: Text(controller.btnTaskName.value)))
           ],
         ));
   }

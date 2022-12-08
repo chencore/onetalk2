@@ -19,17 +19,14 @@ class IndexPage extends GetView<IndexController> {
               currentIndex: controller.currentIndex.value,
               // 点击事件,获取当前点击的标签下标sww
               onTap: (int index) {
-                print(index);
                 controller.changePage(index);
               },
               iconSize: 10.0,
               fixedColor: Colors.red,
               type: BottomNavigationBarType.fixed,
               items: const <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.home), label: "Browse"),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.category), label: "History")
+                BottomNavigationBarItem(icon: Icon(Icons.home), label: "首页"),
+                BottomNavigationBarItem(icon: Icon(Icons.category), label: "设置")
               ],
             )));
   }

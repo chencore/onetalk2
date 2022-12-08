@@ -16,7 +16,7 @@ class LoginPage extends GetView<LoginController> {
       appBar: AppBar(title: Text('History')),
       body: Center(
         child: Container(
-          child: Text("aaaaa"),
+          child: Text("bbbb"),
         ),
       ),
     );

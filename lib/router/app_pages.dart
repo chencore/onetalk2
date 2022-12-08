@@ -3,6 +3,8 @@ import 'package:onetalk2/pages/home/home.binding.dart';
 import 'package:onetalk2/pages/home/home_view.dart';
 import 'package:onetalk2/pages/login/login_binding.dart';
 import 'package:onetalk2/pages/login/login_view.dart';
+import 'package:onetalk2/pages/my/my_binding.dart';
+import 'package:onetalk2/pages/my/my_view.dart';
 import 'package:onetalk2/pages/notfound/notfound_view.dart';
 import 'package:onetalk2/pages/proxy/proxy_view.dart';
 import 'package:get/get.dart';
@@ -25,6 +27,11 @@ class AppPages {
       name: AppRoutes.Home,
       page: () => HomePage(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.My,
+      page: () => MyPage(),
+      binding: MyBinding(),
     ),
   ];
 
