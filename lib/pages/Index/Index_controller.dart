@@ -23,6 +23,10 @@ class IndexController extends GetxController {
     );
   }
 
+  void testInvoke(String val) {
+    print(val);
+  }
+
   Route? onGenerateRoute(RouteSettings settings) {
     if (settings.name == '/login')
       return GetPageRoute(

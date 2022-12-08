@@ -15,7 +15,10 @@ class HomePage extends GetView<HomeController> {
             Obx(() => Center(child: Text(controller.userName.value))),
             TextButton(
                 onPressed: () => controller.changeUserName(),
-                child: Text('changeName'))
+                child: Text('changeName')),
+            TextButton(
+                onPressed: () => controller.invokeIndexMethod("aaaa"),
+                child: Text('invokeIndex'))
           ],
         ));
   }

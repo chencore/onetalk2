@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:eosdart/eosdart.dart';
+import 'package:onetalk2/pages/Index/Index_controller.dart';
 
 class HomeController extends GetxController {
   final count = 0.obs;
@@ -18,6 +19,11 @@ class HomeController extends GetxController {
   void onClose() {}
 
   void increment() => count.value++;
+
+  void invokeIndexMethod(String val) {
+    IndexController controller = Get.find<IndexController>();
+    controller.testInvoke(val);
+  }
 
   void changeUserName() async {
     //EOSClient client = EOSClient('https://api.eosn.io', 'v1');
