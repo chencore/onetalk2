@@ -7,7 +7,7 @@ import 'package:onetalk2/pages/Index/Index_controller.dart';
 class HomeController extends GetxController {
   final count = 0.obs;
 
-  RxString userName = 'burnish'.obs;
+  RxString userName = 'test'.obs;
   RxString btnTaskName = "任务已停止".obs;
 
   @override
@@ -45,7 +45,23 @@ class HomeController extends GetxController {
     });
   }
 
-  void changeUserName() async {
+  void getChainInfo() async {
+    try {
+      userName.value = "getChainInfo";
+      EOSClient client = EOSClient('https://api.eosn.io', 'v1');
+      // Get EOS Node Info
+      userName.value = "getChainInfo1";
+      NodeInfo nodeInfo = await client.getInfo();
+      userName.value = "getChainInfo2";
+      userName.value = nodeInfo.toString();
+    } catch (e) {
+      print(e);
+      userName.value = "getChainInfo4";
+      userName.value = e.toString();
+    }
+  }
+
+  void transfar() async {
     //EOSClient client = EOSClient('https://api.eosn.io', 'v1');
     EOSClient client = EOSClient('https://api.eosn.io', 'v1');
     client.privateKeys = [
@@ -53,8 +69,8 @@ class HomeController extends GetxController {
     ];
 
     // Get EOS Node Info
-    NodeInfo nodeInfo = await client.getInfo();
-    userName.value = nodeInfo.toString();
+    // NodeInfo nodeInfo = await client.getInfo();
+    // userName.value = nodeInfo.toString();
     //print(nodeInfo.toString());
 
     List<Authorization> auth = [
@@ -82,5 +98,6 @@ class HomeController extends GetxController {
 
     dynamic trx = await client.pushTransaction(transaction, broadcast: true);
     print(trx);
+    userName.value = trx.toString();
   }
 }

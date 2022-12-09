@@ -7,7 +7,9 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //这里kotlin_version的值居然不是1.6.10，写死为1.6.10编译不报错
+        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
     }
 }
 

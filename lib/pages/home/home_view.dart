@@ -14,11 +14,13 @@ class HomePage extends GetView<HomeController> {
           children: [
             Obx(() => Center(child: Text(controller.userName.value))),
             TextButton(
-                onPressed: () => controller.changeUserName(),
-                child: Text('changeName')),
-            Obx(() => TextButton(
-                onPressed: () => controller.invokeIndexMethod("aaaa"),
-                child: Text("${controller.btnTaskName.value}"))),
+                onPressed: () => controller.getChainInfo(),
+                child: Text('获取当前链信息')),
+            TextButton(
+                onPressed: () => controller.transfar(), child: Text('转账')),
+            // Obx(() => TextButton(
+            //     onPressed: () => controller.invokeIndexMethod("aaaa"),
+            //     child: Text("${controller.btnTaskName.value}"))),
             Obx(() => TextButton(
                 onPressed: () => controller.startTask(),
                 child: Text(controller.btnTaskName.value)))

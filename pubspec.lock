@@ -78,13 +78,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "3.0.1"
-  cross_file:
-    dependency: transitive
-    description:
-      name: cross_file
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "0.3.3+2"
   crypto:
     dependency: transitive
     description:
@@ -174,13 +167,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "3.0.5"
-  flutter_plugin_android_lifecycle:
-    dependency: transitive
-    description:
-      name: flutter_plugin_android_lifecycle
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.0.7"
   flutter_spinkit:
     dependency: transitive
     description:
@@ -226,34 +212,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "4.0.2"
-  image_gallery_saver:
-    dependency: "direct main"
-    description:
-      name: image_gallery_saver
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "1.7.1"
-  image_picker:
-    dependency: "direct main"
-    description:
-      name: image_picker
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "0.7.5+4"
-  image_picker_for_web:
-    dependency: transitive
-    description:
-      name: image_picker_for_web
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.1.10"
-  image_picker_platform_interface:
-    dependency: transitive
-    description:
-      name: image_picker_platform_interface
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.6.2"
   intl:
     dependency: "direct main"
     description:
@@ -380,13 +338,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "3.9.0"
-  photo_view:
-    dependency: "direct main"
-    description:
-      name: photo_view
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "0.11.1"
   platform:
     dependency: transitive
     description:
@@ -415,13 +366,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "4.2.4"
-  pull_to_refresh:
-    dependency: "direct main"
-    description:
-      name: pull_to_refresh
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.0.0"
   rxdart:
     dependency: transitive
     description:
@@ -574,34 +518,6 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "2.1.2"
-  webview_flutter:
-    dependency: "direct main"
-    description:
-      name: webview_flutter
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.8.0"
-  webview_flutter_android:
-    dependency: transitive
-    description:
-      name: webview_flutter_android
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.10.4"
-  webview_flutter_platform_interface:
-    dependency: transitive
-    description:
-      name: webview_flutter_platform_interface
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "1.9.5"
-  webview_flutter_wkwebview:
-    dependency: transitive
-    description:
-      name: webview_flutter_wkwebview
-      url: "https://mirrors.cloud.tencent.com/dart-pub/"
-    source: hosted
-    version: "2.9.5"
   win32:
     dependency: transitive
     description:
