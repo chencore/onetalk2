@@ -106,6 +106,13 @@ packages:
       url: "https://mirrors.cloud.tencent.com/dart-pub/"
     source: hosted
     version: "2.0.0"
+  eos_flutter_plugin:
+    dependency: "direct main"
+    description:
+      path: "/Users/chenke/code/flutter/tp_flutter_plugin"
+      relative: false
+    source: path
+    version: "0.0.1"
   eosdart:
     dependency: "direct main"
     description:

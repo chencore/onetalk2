@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:onetalk2/pages/home/home_controller.dart';
 import 'package:get/get.dart';
+import 'package:eos_flutter_plugin/TPListener.dart';
+import 'package:eos_flutter_plugin/tp_flutter_plugin.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +25,12 @@ class HomePage extends GetView<HomeController> {
             //     child: Text("${controller.btnTaskName.value}"))),
             Obx(() => TextButton(
                 onPressed: () => controller.startTask(),
-                child: Text(controller.btnTaskName.value)))
+                child: Text(controller.btnTaskName.value))),
+            TextButton(
+                onPressed: () async {
+                  await TpFlutterPlugin.authorize("授权");
+                },
+                child: Text('调用TP')),
           ],
         ));
   }

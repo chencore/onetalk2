@@ -60,6 +60,9 @@ dependencies:
   # image_gallery_saver: ^1.6.9
   flutter_cache_manager: ^3.1.0
   json_annotation: ^4.7.0
+  # tp钱包插件
+  eos_flutter_plugin:
+    path: /Users/chenke/code/flutter/tp_flutter_plugin/
 
 
 dev_dependencies:
