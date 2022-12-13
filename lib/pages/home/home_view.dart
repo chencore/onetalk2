@@ -4,11 +4,12 @@ import 'package:get/get.dart';
 import 'package:eos_flutter_plugin/TPListener.dart';
 import 'package:eos_flutter_plugin/tp_flutter_plugin.dart';
 
-class HomePage extends GetView<HomeController> {
+class HomePage extends GetView<HomeController> implements TPListener {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    TpFlutterPlugin.addTPListener(this);
     return Scaffold(
         appBar: AppBar(title: Text('Browse')),
         body: Column(
@@ -28,10 +29,18 @@ class HomePage extends GetView<HomeController> {
                 child: Text(controller.btnTaskName.value))),
             TextButton(
                 onPressed: () async {
-                  await TpFlutterPlugin.authorize("授权");
+                  //String val = await TpFlutterPlugin.authorize("授权");
+                  String val = await TpFlutterPlugin.transfer("edenbettest4",
+                      "edenbettest2", "eos.io", "EOS", "0.001", "testaab");
+                  print(val);
                 },
                 child: Text('调用TP')),
           ],
         ));
+  }
+
+  @override
+  void receiveMsg(String message) {
+    print(message);
   }
 }

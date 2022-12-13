@@ -81,9 +81,9 @@ class HomeController extends GetxController {
 
     Map data = {
       'from': 'edenbettest4',
-      'to': 'edenbettest1',
+      'to': 'edenbettest2',
       'quantity': '0.0001 EOS',
-      'memo': '',
+      'memo': 'aaaa',
     };
 
     List<Action> actions = [
