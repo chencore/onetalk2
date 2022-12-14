@@ -30,8 +30,13 @@ class HomePage extends GetView<HomeController> implements TPListener {
             TextButton(
                 onPressed: () async {
                   //String val = await TpFlutterPlugin.authorize("授权");
-                  String val = await TpFlutterPlugin.transfer("edenbettest4",
-                      "edenbettest2", "eos.io", "EOS", "0.001", "testaab");
+                  String val = await TpFlutterPlugin.transfer(
+                      "edenbettest4",
+                      "edenbettest2",
+                      "eosio.token",
+                      "EOS",
+                      "0.0001",
+                      "testaab");
                   print(val);
                 },
                 child: Text('调用TP')),
